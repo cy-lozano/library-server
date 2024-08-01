@@ -1,6 +1,6 @@
 package com.grow.library.model;
 
-import com.grow.library.notiication.LoanObserver;
+import com.grow.library.notification.LoanObserver;
 import lombok.Getter;
 import lombok.Setter;
 

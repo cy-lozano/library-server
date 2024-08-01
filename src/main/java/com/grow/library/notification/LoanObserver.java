@@ -1,4 +1,4 @@
-package com.grow.library.notiication;
+package com.grow.library.notification;
 
 import com.grow.library.model.Loan;
 

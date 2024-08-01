@@ -3,7 +3,7 @@ package com.grow.library.repository.impl;
 import com.grow.library.model.Book;
 import com.grow.library.model.Loan;
 import com.grow.library.model.Member;
-import com.grow.library.notiication.LoanObserver;
+import com.grow.library.notification.LoanObserver;
 import com.grow.library.repository.BookRepository;
 import com.grow.library.repository.LoanRepository;
 import com.grow.library.repository.MemberRepository;

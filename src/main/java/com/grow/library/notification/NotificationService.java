@@ -1,4 +1,4 @@
-package com.grow.library.notiication;
+package com.grow.library.notification;
 
 import com.grow.library.model.Loan;
 import com.grow.library.service.LoanService;
@@ -17,7 +17,7 @@ import java.time.temporal.ChronoUnit;
 public class NotificationService {
 
     @Value("${notification.threshold:1}")
-    private Integer notificationThreshold;
+    private int notificationThreshold;
 
     private final LoanService loanService;
 
