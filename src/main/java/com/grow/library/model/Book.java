@@ -1,6 +1,7 @@
 package com.grow.library.model;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDate;
@@ -20,6 +21,6 @@ public class Book {
     private List<Author> authors;
 
     public boolean isAvailable() {
-        return availableCopies > 0;
+        return availableCopies != null && availableCopies > 0;
     }
 }

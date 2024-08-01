@@ -1,14 +1,10 @@
 package com.grow.library.repository.impl;
 
-import com.grow.library.model.Loan;
 import com.grow.library.model.Member;
-import com.grow.library.repository.BookRepository;
-import com.grow.library.repository.LoanRepository;
 import com.grow.library.repository.MemberRepository;
 import net.datafaker.Faker;
 import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

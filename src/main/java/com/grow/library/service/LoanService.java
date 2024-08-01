@@ -1,15 +1,11 @@
 package com.grow.library.service;
 
-import com.grow.library.model.Book;
 import com.grow.library.model.Loan;
-import com.grow.library.repository.BookRepository;
 import com.grow.library.repository.LoanRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
 import java.util.List;
 
 @Service

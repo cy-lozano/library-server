@@ -1,6 +1,5 @@
 package com.grow.library.repository;
 
-import com.grow.library.model.Book;
 import com.grow.library.model.Loan;
 import org.springframework.stereotype.Repository;
 

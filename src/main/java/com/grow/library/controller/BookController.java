@@ -17,17 +17,22 @@ public class BookController {
     private final BookService bookService;
 
     @GetMapping
-    public List<Book> getBooks(){
+    public List<Book> getBooks() {
         return bookService.getBooks();
     }
 
     @GetMapping("/{id}")
-    public Book getBook(@PathVariable("id") Long id){
+    public Book getBook(@PathVariable("id") Long id) {
         return bookService.getBook(id);
     }
 
+    @PostMapping
+    public Long createBook(@RequestBody Book book) {
+        return bookService.createBook(book);
+    }
+
     @PostMapping("/search")
-    public List<Book> searchBook(@RequestBody Map<SearchType, String> criteria){
+    public List<Book> searchBook(@RequestBody Map<SearchType, String> criteria) {
         return bookService.searchBooks(criteria);
     }
 }

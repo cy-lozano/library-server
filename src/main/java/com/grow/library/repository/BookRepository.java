@@ -8,5 +8,8 @@ import java.util.List;
 @Repository
 public interface BookRepository {
     List<Book> getBooks();
+
     Book getBook(Long id);
+
+    Long createBook(Book book);
 }

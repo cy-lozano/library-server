@@ -18,11 +18,11 @@ public class BookService {
     private final BookRepository bookRepository;
     private final BookSearchStrategyFactory bookSearchStrategyFactory;
 
-    public List<Book> getBooks(){
+    public List<Book> getBooks() {
         return bookRepository.getBooks();
     }
 
-    public Book getBook(Long id){
+    public Book getBook(Long id) {
         return bookRepository.getBook(id);
     }
 
@@ -34,5 +34,9 @@ public class BookService {
             books = bookSearchStrategyFactory.getBookSearchStrategy(searchType).search(books, keyword);
         }
         return books;
+    }
+
+    public Long createBook(Book book) {
+        return bookRepository.createBook(book);
     }
 }
