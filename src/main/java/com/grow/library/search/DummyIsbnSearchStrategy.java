@@ -18,5 +18,14 @@ public class DummyIsbnSearchStrategy implements BookSearchStrategy {
         return books.stream()
                 .filter(book -> book.getIsbn().equals(keyword))
                 .toList();
+        /*
+          SELECT
+            b.*,
+            a.*
+          FROM book_author ba
+          INNER JOIN book b ON ba.book_id = b.id
+          INNER JOIN author a ON ba.author_id = a.id
+          WHERE b.isbn = <keyword>;
+        */
     }
 }

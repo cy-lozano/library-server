@@ -26,6 +26,16 @@ public class NotificationService {
         loanService.getActiveLoans().stream()
                 .filter(loan -> ChronoUnit.DAYS.between(LocalDate.now(), loan.getDueDate()) <= notificationThreshold)
                 .forEach(Loan::notifyObservers);
+
+        /*
+            SELECT
+                b.*,
+                m.*
+            FROM loan l
+            INNER JOIN book b ON l.book_id = b.id
+            INNER JOIN member m ON l.member_id = m.id
+            WHERE l.due_date - CURRENT_DATE <= <threshold>
+         */
     }
 
 }
